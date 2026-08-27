@@ -21,5 +21,6 @@ get a screenshot of the connections (will need to increase timeout)
 
 **Access the target machine via RDP using the compromised credentials**
 `xfreerdp3 /u:car\ryan.young /p:<pass> /v:172.16.13.26 +clipboard /dynamic-resolution`
+
 ![](assets/Pasted%20image%2020260724111954.png)
 
